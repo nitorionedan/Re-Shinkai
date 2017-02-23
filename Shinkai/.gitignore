@@ -1,0 +1,18 @@
+*.obj
+*.iobj
+*.sdf
+*.sln
+*.vcxproj
+*.vcxproj.*
+*.ilk
+*.tlog
+*.idb
+*.pdb
+*.ipdb
+*.log
+*.opendb
+<<<<<<< HEAD
+*.hoge
+=======
+*.exp
+>>>>>>> dev
