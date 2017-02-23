@@ -41,7 +41,8 @@ void Stage::Update()
 	logo->Update();
 
 	// TEST
-	if (Keyboard::Instance()->GetDown(KEY_INPUT_P) == 1)	field->StageSwitching(GetRand(9), GetRand(9));
+	if (Keyboard::Instance()->GetDown(KEY_INPUT_P) == 1)
+		field->StageSwitching(GetRand(9), GetRand(9));
 }
 
 
@@ -49,7 +50,8 @@ void Stage::Draw()
 {
 	// Sky
 	SetDrawBlendMode(DX_BLENDMODE_ALPHA, c_alpha);
-	if ( field->HasSky() )	img->Draw(0, 0, "sky00");
+	if ( field->HasSky() )
+		img->Draw(0, 0, "sky00");
 	SetDrawBlendMode(DX_BLENDMODE_NOBLEND, 0);
 
 	// Back
@@ -62,13 +64,16 @@ void Stage::Draw()
 
 	// Ground
 	SetDrawBlendMode(DX_BLENDMODE_ALPHA, c_alpha);
-	if( field->HasGround() )	img->Draw(0, 0, "grd00", true);
+	if( field->HasGround() )
+		img->Draw(0, 0, "grd00", true);
 	SetDrawBlendMode(DX_BLENDMODE_NOBLEND, 0);
 
 	// Walls
 	SetDrawBlendMode(DX_BLENDMODE_ALPHA, c_alpha);
-	if ( field->HasLWall() )	img->Draw(0, 0, "lwall00", true);
-	if ( field->HasRWall() )	img->Draw(0, 0, "rwall00", true);
+	if ( field->HasLWall() )
+		img->Draw(0, 0, "lwall00", true);
+	if ( field->HasRWall() )
+		img->Draw(0, 0, "rwall00", true);
 	SetDrawBlendMode(DX_BLENDMODE_NOBLEND, 0);
 
 	// Logo

@@ -1,6 +1,6 @@
 # ShinKai
 This is a game for windows.<br />
-<img src="Media/ShinKai.png"><br />
+<img src="sShinkai\Media\ShinKai.png"><br />
 
 # Summary
 小型潜水を駆使して海を探検しよう！<br />

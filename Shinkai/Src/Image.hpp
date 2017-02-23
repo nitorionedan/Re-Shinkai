@@ -4,15 +4,11 @@
 @author		nitorionedan
 @warning	This module uses DxLib functions.
 */
-
-
 #ifndef DEF_IMAGE_HPP
 #define DEF_IMAGE_HPP
 
-
 #include "DxLib.h"
 #include "Graphics2D.hpp"
-
 #include <string>
 #include <vector>
 
@@ -25,7 +21,6 @@ enum class eColor
 	Blue	= GetColor(0, 0, 255),
 };
 */
-
 
 class Image
 {
@@ -44,7 +39,7 @@ public:
 	@param[in]	isVertical	Does Wave direct vertical or horizontal?
 	@return					Successe >> 1, Failed >> -1
 	*/
-	int DrawRasterScroll(const int &X, const int &Y, double Cycle, double Shake, const std::string &Key, bool isVertical = true);
+	int DrawRasterScroll(const int &X, const int &Y, double Cycle, double Shake, const std::string &Key, bool isVertical = true){}
 
 	int Load(const TCHAR* fileName, std::string key);
 
@@ -56,7 +51,7 @@ public:
 	// @param[in] key       画像キー
 	// @param[in] TransFlag アルファチャンネルをしようするかどうか
 	// @return              エラー判定
-	int Draw(int    X, int   Y,	const std::string& key, int TransFlag = 0 );
+	int Draw(int    X, int   Y, const std::string& key, int TransFlag = 0 );
 	int DrawF(float X, float Y, const std::string& key, int TransFlag = 0);
 
 	/// --------------------------------------------------------------------
