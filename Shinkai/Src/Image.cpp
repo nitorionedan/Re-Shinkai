@@ -21,33 +21,27 @@ void Image::ChengeIsUpdate(){
 }
 
 
-int Image::Load(const TCHAR * FNAME, std::string key)
+int Image::Load(const TCHAR * fileName, std::string key)
 {
 	this->key.push_back(key);
-
-	gh.push_back( LoadGraph(FNAME) );
-
-	count++;
-	
+	gh.push_back( LoadGraph(fileName) );
+	++count;
 	return 0;
 }
 
 
 void Image::List()
 {
-	if (count == 0)	return;
-
-	int c = 0;
-
+	if (count == 0)
+		return;
+	int c = 0; // 画像数カウント用変数
 	printfDx("Image key list：\n");
-
-	for (auto key : this->key)
+	for (auto i : key)
 	{
-		std::string list = key + "\n";
+		std::string list = i + "\n";
 		printfDx(list.c_str());
 		c++;
 	}
-
 	printfDx("%d images had loaded.", c);
 }
 

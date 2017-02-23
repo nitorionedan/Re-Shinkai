@@ -11,7 +11,7 @@ Let's advent in the sea!<br />
 You can battle some creature, and you can collect treasure!<br />
 I'm want to create such a game :D<br />
 
-<h5>英語勉強中です！＞＜</h5> ↑ Please translate by yourself! HAHAHA!
+<h5>英語勉強中です！ : I'm into studing English!</h5>
 
 <a href="https://github.com/nitorionedan/ShinKai/wiki">Instructions are here:)</a><br>
 

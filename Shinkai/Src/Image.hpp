@@ -45,10 +45,12 @@ public:
 	@return					Successe >> 1, Failed >> -1
 	*/
 	int DrawRasterScroll(const int &X, const int &Y, double Cycle, double Shake, const std::string &Key, bool isVertical = true);
-	int Load(		const TCHAR* FNAME, std::string key);
+
+	int Load(const TCHAR* fileName, std::string key);
+
 	void List();
 	
-	// --------------------------------------------------------------------
+	/// --------------------------------------------------------------------
 	// @brief               ¶ã‚ğ’†S‚É‰æ‘œ‚ğ•`‰æ
 	// @param[in] X, Y      •`‰æÀ•W
 	// @param[in] key       ‰æ‘œƒL[
@@ -57,7 +59,7 @@ public:
 	int Draw(int    X, int   Y,	const std::string& key, int TransFlag = 0 );
 	int DrawF(float X, float Y, const std::string& key, int TransFlag = 0);
 
-	// --------------------------------------------------------------------
+	/// --------------------------------------------------------------------
 	// @brief               ‰æ‘œ‚Ì’†S‚ğŠî€‚É•`‰æ
 	// @param[in] X, Y      •`‰æÀ•W
 	// @param[in] ExRate    Šg‘å—¦
@@ -69,7 +71,7 @@ public:
 	int DrawRota(int    X, int   Y, double ExRate, double Angle, std::string key, int TransFlag = 0, int TurnFlag = 0);
 	int DrawRotaF(float X, float Y, double ExRate, double Angle, std::string key, int TransFlag = 0, int TurnFlag = 0);
 
-	// --------------------------------------------------------------------
+	/// --------------------------------------------------------------------
 	// @brief                   ‰æ‘œ‚Ìw’è‹éŒ`•”•ª‚Ì‚İ‚ğ“™”{•`‰æ
 	// @param[in] DestX, DestY  •`‰æÀ•W
 	// @param[in] SrcX, SrcY    ‹éŒ`‚Ì¶ã
@@ -80,7 +82,7 @@ public:
 	// @return                  ƒGƒ‰[”»’è
 	int DrawRect(int DestX,	int DestY, int SrcX, int SrcY, int Width, int Height, const std::string& key, int TransFlag = 0, int TurnFlag = 0 );
 
-	// --------------------------------------------------------------------
+	/// --------------------------------------------------------------------
 	// @brief					Near raster scroll
 	// @param[in]	X, Y		Drawing position
 	// @param[in]	Cycle		Wave period
